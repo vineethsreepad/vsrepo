@@ -1,2 +1,2 @@
 # vsrepo
-This is reporsioty where we are going to have a ecommerce app developed using clean architecture in dotnet using the main cloud architecture principles
+E-commerce application built with Clean Architecture in .NET, following cloud-native principles — featuring DDD, CQRS, and scalable microservice patterns on Azure.
