@@ -4,8 +4,8 @@ using MediatR;
 
 namespace Catalog.Application.Queries
 {
-    public class GetProdutsByBrandQuery() : IRequest<IList<ProductResponse>>
+    public record GetProdutsByBrandQuery(string BrandName) : IRequest<IList<ProductResponse>>
     {
-        public string BrandName { get; set; }
+
     }
 }

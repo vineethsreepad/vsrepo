@@ -2,8 +2,8 @@ using MediatR;
 
 namespace Catalog.Application.Commands
 {
-    public class DeleteProductByIdCommand : IRequest<bool>
+    public record DeleteProductByIdCommand(string id) : IRequest<bool>
     {
-        public string Id { get; set; }
+
     }
 }

@@ -16,7 +16,7 @@ namespace Catalog.Application.Handlers
         }
         public async Task<bool> Handle(DeleteProductByIdCommand request, CancellationToken cancellationToken)
         {
-            return await _productRepository.DeleteProductAsync(request.Id);
+            return await _productRepository.DeleteProductAsync(request.id);
         }
     }
 }
