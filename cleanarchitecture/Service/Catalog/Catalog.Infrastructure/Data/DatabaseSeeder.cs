@@ -56,7 +56,7 @@ namespace Catalog.Infrastructure.Data
             List<Product> productList = new List<Product>();
             if (await products.CountDocumentsAsync(_ => true) == 0)
             {
-                var productData = await File.ReadAllTextAsync(Path.Combine(SeedBasePath, "prodcut.json"));
+                var productData = await File.ReadAllTextAsync(Path.Combine(SeedBasePath, "product.json"));
                 productList = System.Text.Json.JsonSerializer.Deserialize<List<Product>>(productData);
                 foreach (var product in productList)
                 {

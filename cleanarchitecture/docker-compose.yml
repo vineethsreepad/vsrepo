@@ -1,0 +1,12 @@
+services:
+  catalogdb:
+    image: mongo:latest
+
+  catalog:
+    image: ecommerece-catalog
+    build:
+      context: .
+      dockerfile: Service/Catalog/Catalog.API/Dockerfile
+
+volumes:
+    mongo_data:
